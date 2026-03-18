@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import { Analytics } from '@vercel/analytics/next';
 import { SPORTS_CATEGORIES, CATEGORY_DISPLAY_NAMES, CATEGORY_ICONS } from '@/lib/categories';
 import './globals.css';
 
@@ -53,6 +54,7 @@ export default function RootLayout({
             <p>&copy; {new Date().getFullYear()} &#127941; KidGear Reviews</p>
           </div>
         </footer>
+        <Analytics />
       </body>
     </html>
   );
