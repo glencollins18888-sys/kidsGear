@@ -28,7 +28,7 @@ Finding goggles that actually fit a child's face without leaking is half the bat
 - May be too small for kids over 10
 - Limited color options
 
-[Check Price on Amazon](https://www.amazon.com/dp/PLACEHOLDER_ASIN?tag=kidsgear0c-20)
+[Check Price on Amazon](https://www.amazon.com/dp/B0C6R3N7TJ?tag=kidsgear0c-20)
 
 ---
 
@@ -47,7 +47,7 @@ Kickboards are fundamental for developing proper kick technique and leg strength
 - Not suitable for very young beginners who need more support
 - Foam can absorb water over time
 
-[Check Price on Amazon](https://www.amazon.com/dp/PLACEHOLDER_ASIN?tag=kidsgear0c-20)
+[Check Price on Amazon](https://www.amazon.com/dp/B001GQ2CMQ?tag=kidsgear0c-20)
 
 ---
 
@@ -66,7 +66,7 @@ Training fins help young swimmers develop proper kick mechanics and ankle flexib
 - Takes time to build up endurance with fins
 - Must be sized carefully for proper fit
 
-[Check Price on Amazon](https://www.amazon.com/dp/PLACEHOLDER_ASIN?tag=kidsgear0c-20)
+[Check Price on Amazon](https://www.amazon.com/dp/B07F8DH4M9?tag=kidsgear0c-20)
 
 ---
 
@@ -85,7 +85,7 @@ For beginners still building water confidence, a quality swim vest provides the 
 - Not a substitute for adult supervision
 - Can be warm in heated pools
 
-[Check Price on Amazon](https://www.amazon.com/dp/PLACEHOLDER_ASIN?tag=kidsgear0c-20)
+[Check Price on Amazon](https://www.amazon.com/dp/B0876R2HRF?tag=kidsgear0c-20)
 
 ---
 

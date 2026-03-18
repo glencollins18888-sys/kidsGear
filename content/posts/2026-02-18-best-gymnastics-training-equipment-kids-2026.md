@@ -28,7 +28,7 @@ This low-profile balance beam sits just a few inches off the floor, making it pe
 - Not full competition height
 - Suede cover needs occasional cleaning
 
-[Check Price on Amazon](https://www.amazon.com/dp/PLACEHOLDER_ASIN?tag=kidsgear0c-20)
+[Check Price on Amazon](https://www.amazon.com/dp/B006FF8YWA?tag=kidsgear0c-20)
 
 ---
 
@@ -47,7 +47,7 @@ A quality folding mat is the foundation of any home gymnastics setup. This 4x8-f
 - Not thick enough for advanced tumbling
 - Can slide on hardwood floors without a grip pad
 
-[Check Price on Amazon](https://www.amazon.com/dp/PLACEHOLDER_ASIN?tag=kidsgear0c-20)
+[Check Price on Amazon](https://www.amazon.com/dp/B084TLDLQ3?tag=kidsgear0c-20)
 
 ---
 
@@ -66,7 +66,7 @@ This adjustable horizontal bar lets young gymnasts practice basic bar skills at 
 - Has a weight limit (check before purchasing)
 - Needs a mat underneath for safety
 
-[Check Price on Amazon](https://www.amazon.com/dp/PLACEHOLDER_ASIN?tag=kidsgear0c-20)
+[Check Price on Amazon](https://www.amazon.com/dp/B083TJF4VG?tag=kidsgear0c-20)
 
 ---
 
@@ -85,7 +85,7 @@ Wedge mats (also called cheese mats or incline mats) are incredibly versatile tr
 - Takes up storage space
 - Limited use once skills are mastered
 
-[Check Price on Amazon](https://www.amazon.com/dp/PLACEHOLDER_ASIN?tag=kidsgear0c-20)
+[Check Price on Amazon](https://www.amazon.com/dp/B07JCJ3P4Z?tag=kidsgear0c-20)
 
 ---
 

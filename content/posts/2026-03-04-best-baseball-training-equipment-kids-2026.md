@@ -28,7 +28,7 @@ The Tanner Tee is the gold standard in batting tees, used by players from tee-ba
 - More expensive than basic tees
 - Heavier than portable alternatives
 
-[Check Price on Amazon](https://www.amazon.com/dp/PLACEHOLDER_ASIN?tag=kidsgear0c-20)
+[Check Price on Amazon](https://www.amazon.com/dp/B00D3PNZB0?tag=kidsgear0c-20)
 
 ---
 
@@ -47,7 +47,7 @@ This affordable pitching machine pops balls straight up for easy hitting practic
 - Only pops balls upward, doesn't pitch forward
 - Plastic balls included aren't great quality
 
-[Check Price on Amazon](https://www.amazon.com/dp/PLACEHOLDER_ASIN?tag=kidsgear0c-20)
+[Check Price on Amazon](https://www.amazon.com/dp/B0007DHT8Q?tag=kidsgear0c-20)
 
 ---
 
@@ -66,7 +66,7 @@ A properly fitting glove is essential for any young player. The Rawlings Renegad
 - May be stiff initially for very young players
 - Sizing runs slightly large
 
-[Check Price on Amazon](https://www.amazon.com/dp/PLACEHOLDER_ASIN?tag=kidsgear0c-20)
+[Check Price on Amazon](https://www.amazon.com/dp/B00G47U36E?tag=kidsgear0c-20)
 
 ---
 
@@ -85,7 +85,7 @@ This clever training ball has a built-in speed sensor that reads out throwing ve
 - Battery eventually needs replacement
 - Can encourage overthrowing if not coached properly
 
-[Check Price on Amazon](https://www.amazon.com/dp/PLACEHOLDER_ASIN?tag=kidsgear0c-20)
+[Check Price on Amazon](https://www.amazon.com/dp/B002XT9A7K?tag=kidsgear0c-20)
 
 ---
 

@@ -109,7 +109,7 @@ Then review 4 products. For each product use this format:
 - [con 1]
 - [con 2]
 
-[Check Price on Amazon](https://www.amazon.com/dp/PLACEHOLDER_ASIN?tag=${AFFILIATE_TAG})
+[Check Price on Amazon](https://www.amazon.com/s?k=[URL-encoded+product+name]&tag=${AFFILIATE_TAG})
 
 ---
 
@@ -123,7 +123,9 @@ After all products, add:
 
 [1-2 paragraphs summarizing the best picks and who each product is best for]
 
-Make the product names realistic and specific. Write naturally and helpfully.`;
+Make the product names realistic and specific. Write naturally and helpfully.
+
+IMPORTANT: For each Amazon link, replace [URL-encoded+product+name] with the actual product name URL-encoded with + signs (e.g., "SKLZ+Star-Kick+Solo+Trainer"). This creates a working Amazon search link for the product.`;
 
   console.log(`Generating ${displayName} review for ${today}...`);
 
