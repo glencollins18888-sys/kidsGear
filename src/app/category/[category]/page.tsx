@@ -4,6 +4,7 @@ import { getPostsByCategory } from '@/lib/posts';
 import {
   SPORTS_CATEGORIES,
   CATEGORY_DISPLAY_NAMES,
+  CATEGORY_ICONS,
   type SportCategory,
 } from '@/lib/categories';
 
@@ -29,24 +30,25 @@ export default async function CategoryPage({ params }: Props) {
   const { category } = await params;
   const name =
     CATEGORY_DISPLAY_NAMES[category as SportCategory] || category;
+  const icon = CATEGORY_ICONS[category as SportCategory] || '';
   const posts = getPostsByCategory(category);
 
   return (
     <>
-      <h1 className="page-title">Best {name} Equipment for Kids</h1>
+      <h1 className="page-title">{icon} Best {name} Equipment for Kids</h1>
       <p className="page-subtitle">
-        All our {name.toLowerCase()} training equipment reviews.
+        &#128221; All our {name.toLowerCase()} training equipment reviews.
       </p>
 
       <div className="category-bar">
-        <Link href="/">All</Link>
+        <Link href="/">&#127968; All</Link>
         {SPORTS_CATEGORIES.map((cat) => (
           <Link
             key={cat}
             href={`/category/${cat}`}
             className={cat === category ? 'active' : ''}
           >
-            {CATEGORY_DISPLAY_NAMES[cat]}
+            <span aria-hidden="true">{CATEGORY_ICONS[cat]}</span> {CATEGORY_DISPLAY_NAMES[cat]}
           </Link>
         ))}
       </div>
@@ -59,11 +61,13 @@ export default async function CategoryPage({ params }: Props) {
         <div className="post-grid">
           {posts.map((post) => (
             <article key={post.slug} className="post-card">
-              <span className="post-card-category">{name}</span>
+              <span className="post-card-category">
+                <span aria-hidden="true">{icon}</span> {name}
+              </span>
               <h2 className="post-card-title">
                 <Link href={`/posts/${post.slug}`}>{post.title}</Link>
               </h2>
-              <p className="post-card-date">{post.date}</p>
+              <p className="post-card-date">&#128197; {post.date}</p>
               <p className="post-card-excerpt">{post.excerpt}</p>
             </article>
           ))}

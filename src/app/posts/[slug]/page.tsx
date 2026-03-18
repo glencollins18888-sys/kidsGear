@@ -2,7 +2,7 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 import { getAllPosts, getPostBySlug } from '@/lib/posts';
-import { CATEGORY_DISPLAY_NAMES, type SportCategory } from '@/lib/categories';
+import { CATEGORY_DISPLAY_NAMES, CATEGORY_ICONS, type SportCategory } from '@/lib/categories';
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -37,16 +37,17 @@ export default async function PostPage({ params }: Props) {
     <article>
       <div className="article-header">
         <Link href="/" className="article-back">
-          &larr; All Reviews
+          &larr; &#127968; All Reviews
         </Link>
         <div>
           <span className="article-category">
+            <span aria-hidden="true">{CATEGORY_ICONS[post.category as SportCategory]}</span>{' '}
             {CATEGORY_DISPLAY_NAMES[post.category as SportCategory] ||
               post.category}
           </span>
         </div>
         <h1 className="article-title">{post.title}</h1>
-        <p className="article-date">{post.date}</p>
+        <p className="article-date">&#128197; {post.date}</p>
       </div>
       <div
         className="article-content"

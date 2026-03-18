@@ -29,7 +29,7 @@ const CATEGORY_DISPLAY_NAMES: Record<string, string> = {
   'martial-arts': 'Martial Arts',
 };
 
-const AFFILIATE_TAG = 'YOUR-AFFILIATE-TAG-20';
+const AFFILIATE_TAG = 'kidsgear0c-20';
 const postsDir = path.join(process.cwd(), 'content', 'posts');
 
 function getNextCategory(): string {

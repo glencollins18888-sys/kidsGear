@@ -1,6 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
-import { SPORTS_CATEGORIES, CATEGORY_DISPLAY_NAMES } from '@/lib/categories';
+import { SPORTS_CATEGORIES, CATEGORY_DISPLAY_NAMES, CATEGORY_ICONS } from '@/lib/categories';
 import './globals.css';
 
 export const metadata: Metadata = {
@@ -23,12 +23,12 @@ export default function RootLayout({
         <header className="site-header">
           <div className="container">
             <Link href="/" className="site-logo">
-              KidGear Reviews
+              <span className="logo-icon" aria-hidden="true">&#127941;</span> KidGear Reviews
             </Link>
             <nav className="site-nav">
               {SPORTS_CATEGORIES.map((cat) => (
                 <Link key={cat} href={`/category/${cat}`}>
-                  {CATEGORY_DISPLAY_NAMES[cat]}
+                  <span aria-hidden="true">{CATEGORY_ICONS[cat]}</span> {CATEGORY_DISPLAY_NAMES[cat]}
                 </Link>
               ))}
             </nav>
@@ -38,10 +38,10 @@ export default function RootLayout({
         <footer className="site-footer">
           <div className="container">
             <nav className="footer-nav">
-              <Link href="/about">About</Link>
-              <Link href="/contact">Contact</Link>
-              <Link href="/privacy-policy">Privacy Policy</Link>
-              <Link href="/disclaimer">Disclaimer</Link>
+              <Link href="/about">&#9881;&#65039; About</Link>
+              <Link href="/contact">&#9993;&#65039; Contact</Link>
+              <Link href="/privacy-policy">&#128274; Privacy Policy</Link>
+              <Link href="/disclaimer">&#9888;&#65039; Disclaimer</Link>
             </nav>
             <p className="affiliate-disclosure">
               <strong>Affiliate Disclosure:</strong> As an Amazon Associate, I
@@ -50,7 +50,7 @@ export default function RootLayout({
               change. Any price and availability information displayed on
               Amazon at the time of purchase will apply.
             </p>
-            <p>&copy; {new Date().getFullYear()} KidGear Reviews</p>
+            <p>&copy; {new Date().getFullYear()} &#127941; KidGear Reviews</p>
           </div>
         </footer>
       </body>

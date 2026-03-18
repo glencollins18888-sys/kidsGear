@@ -28,7 +28,7 @@ This clever attachment connects to any soccer ball and lets kids practice kicks,
 - Elastic cord can wear out over time
 - Not great for very young kids under 5
 
-[Check Price on Amazon](https://www.amazon.com/dp/PLACEHOLDER_ASIN?tag=YOUR-AFFILIATE-TAG-20)
+[Check Price on Amazon](https://www.amazon.com/dp/PLACEHOLDER_ASIN?tag=kidsgear0c-20)
 
 ---
 
@@ -47,7 +47,7 @@ These portable pop-up goals are perfect for backyard practice or taking to the p
 - Not full-size, best for younger kids
 - Stakes can be hard to push into hard ground
 
-[Check Price on Amazon](https://www.amazon.com/dp/PLACEHOLDER_ASIN?tag=YOUR-AFFILIATE-TAG-20)
+[Check Price on Amazon](https://www.amazon.com/dp/PLACEHOLDER_ASIN?tag=kidsgear0c-20)
 
 ---
 
@@ -66,7 +66,7 @@ Agility cones are a must-have for any young soccer player looking to improve the
 - Lightweight cones can blow away in strong wind
 - No drill guide included
 
-[Check Price on Amazon](https://www.amazon.com/dp/PLACEHOLDER_ASIN?tag=YOUR-AFFILIATE-TAG-20)
+[Check Price on Amazon](https://www.amazon.com/dp/PLACEHOLDER_ASIN?tag=kidsgear0c-20)
 
 ---
 
@@ -85,7 +85,7 @@ A quality training ball is the foundation of any practice session. The FORZA tra
 - Not suitable for competitive matches
 - Graphics can fade with heavy use
 
-[Check Price on Amazon](https://www.amazon.com/dp/PLACEHOLDER_ASIN?tag=YOUR-AFFILIATE-TAG-20)
+[Check Price on Amazon](https://www.amazon.com/dp/PLACEHOLDER_ASIN?tag=kidsgear0c-20)
 
 ---
 

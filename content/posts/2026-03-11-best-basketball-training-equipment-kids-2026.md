@@ -28,7 +28,7 @@ The Dribble Stick is a brilliant training tool that forces kids to keep their ey
 - Requires a flat surface to set up
 - Higher price point than basic training aids
 
-[Check Price on Amazon](https://www.amazon.com/dp/PLACEHOLDER_ASIN?tag=YOUR-AFFILIATE-TAG-20)
+[Check Price on Amazon](https://www.amazon.com/dp/PLACEHOLDER_ASIN?tag=kidsgear0c-20)
 
 ---
 
@@ -47,7 +47,7 @@ An adjustable hoop is essential for any young basketball player. This Lifetime m
 - Assembly takes 1-2 hours
 - Base needs to be filled for stability
 
-[Check Price on Amazon](https://www.amazon.com/dp/PLACEHOLDER_ASIN?tag=YOUR-AFFILIATE-TAG-20)
+[Check Price on Amazon](https://www.amazon.com/dp/PLACEHOLDER_ASIN?tag=kidsgear0c-20)
 
 ---
 
@@ -66,7 +66,7 @@ This simple but effective target attaches to any standard basketball rim and giv
 - Can fall off during aggressive rebounding
 - Only useful for shooting drills
 
-[Check Price on Amazon](https://www.amazon.com/dp/PLACEHOLDER_ASIN?tag=YOUR-AFFILIATE-TAG-20)
+[Check Price on Amazon](https://www.amazon.com/dp/PLACEHOLDER_ASIN?tag=kidsgear0c-20)
 
 ---
 
@@ -85,7 +85,7 @@ A properly sized basketball makes a huge difference for young players. This Spal
 - Outdoor rubber wears down on rough surfaces
 - Not suitable for competitive indoor play
 
-[Check Price on Amazon](https://www.amazon.com/dp/PLACEHOLDER_ASIN?tag=YOUR-AFFILIATE-TAG-20)
+[Check Price on Amazon](https://www.amazon.com/dp/PLACEHOLDER_ASIN?tag=kidsgear0c-20)
 
 ---
 

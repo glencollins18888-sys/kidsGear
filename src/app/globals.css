@@ -49,6 +49,14 @@ body {
   font-weight: 800;
   color: var(--color-primary);
   text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.logo-icon {
+  font-size: 1.75rem;
+  line-height: 1;
 }
 
 .site-nav {
@@ -229,6 +237,31 @@ main {
 
 .article-content strong {
   font-weight: 600;
+}
+
+/* Amazon button in articles */
+.article-content a[href*="amazon.com"] {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  background: #ff9900;
+  color: #111;
+  font-weight: 600;
+  padding: 0.6rem 1.25rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: background 0.15s, transform 0.1s;
+}
+
+.article-content a[href*="amazon.com"]:hover {
+  background: #e88b00;
+  transform: translateY(-1px);
+}
+
+.article-content a[href*="amazon.com"]::before {
+  content: '\1F6D2';
+  font-size: 1.1rem;
 }
 
 /* Empty state */
