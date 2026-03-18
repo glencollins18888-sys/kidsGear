@@ -23,6 +23,9 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: `Best ${name} Training Equipment for Kids`,
     description: `Expert reviews of the best ${name.toLowerCase()} training equipment for children.`,
+    alternates: {
+      canonical: `/category/${category}`,
+    },
   };
 }
 

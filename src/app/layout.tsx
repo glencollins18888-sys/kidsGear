@@ -4,13 +4,33 @@ import { Analytics } from '@vercel/analytics/next';
 import { SPORTS_CATEGORIES, CATEGORY_DISPLAY_NAMES, CATEGORY_ICONS } from '@/lib/categories';
 import './globals.css';
 
+const SITE_URL = process.env.SITE_URL || 'https://kids-gear.vercel.app';
+
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
   title: {
     default: 'KidGear Reviews - Best Sports Training Equipment for Kids',
     template: '%s | KidGear Reviews',
   },
   description:
     'Expert reviews of the best sports training equipment for children. Find the perfect gear to help your young athlete improve their skills.',
+  openGraph: {
+    type: 'website',
+    locale: 'en_US',
+    siteName: 'KidGear Reviews',
+    title: 'KidGear Reviews - Best Sports Training Equipment for Kids',
+    description:
+      'Expert reviews of the best sports training equipment for children. Find the perfect gear to help your young athlete improve their skills.',
+  },
+  twitter: {
+    card: 'summary',
+    title: 'KidGear Reviews - Best Sports Training Equipment for Kids',
+    description:
+      'Expert reviews of the best sports training equipment for children.',
+  },
+  alternates: {
+    canonical: '/',
+  },
 };
 
 export default function RootLayout({

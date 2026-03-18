@@ -25,7 +25,40 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       type: 'article',
       publishedTime: post.date,
     },
+    alternates: {
+      canonical: `/posts/${slug}`,
+    },
   };
+}
+
+function ArticleJsonLd({ post }: { post: { title: string; date: string; metaDescription: string; slug: string } }) {
+  const siteUrl = process.env.SITE_URL || 'https://kids-gear.vercel.app';
+  const jsonLd = {
+    '@context': 'https://schema.org',
+    '@type': 'Article',
+    headline: post.title,
+    description: post.metaDescription,
+    datePublished: post.date,
+    dateModified: post.date,
+    author: {
+      '@type': 'Organization',
+      name: 'KidGear Reviews',
+    },
+    publisher: {
+      '@type': 'Organization',
+      name: 'KidGear Reviews',
+    },
+    mainEntityOfPage: {
+      '@type': 'WebPage',
+      '@id': `${siteUrl}/posts/${post.slug}`,
+    },
+  };
+  return (
+    <script
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+    />
+  );
 }
 
 export default async function PostPage({ params }: Props) {
@@ -35,6 +68,7 @@ export default async function PostPage({ params }: Props) {
 
   return (
     <article>
+      <ArticleJsonLd post={post} />
       <div className="article-header">
         <Link href="/" className="article-back">
           &larr; &#127968; All Reviews
