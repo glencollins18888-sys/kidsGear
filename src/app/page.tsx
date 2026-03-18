@@ -1,6 +1,7 @@
 import Link from 'next/link';
 import { getAllPosts, getAllCategories } from '@/lib/posts';
 import { CATEGORY_DISPLAY_NAMES, CATEGORY_ICONS, type SportCategory } from '@/lib/categories';
+import HeroBanner from '@/components/HeroBanner';
 
 export default function HomePage() {
   const posts = getAllPosts();
@@ -8,9 +9,9 @@ export default function HomePage() {
 
   return (
     <>
-      <h1 className="page-title">&#127941; Kids Sports Equipment Reviews</h1>
+      <h1 className="page-title">Kids Sports Equipment Reviews</h1>
       <p className="page-subtitle">
-        &#128221; Weekly expert reviews to help your young athlete find the best training
+        Weekly expert reviews to help your young athlete find the best training
         gear.
       </p>
 
@@ -32,16 +33,24 @@ export default function HomePage() {
         <div className="post-grid">
           {posts.map((post) => (
             <article key={post.slug} className="post-card">
-              <span className="post-card-category">
-                <span aria-hidden="true">{CATEGORY_ICONS[post.category as SportCategory]}</span>{' '}
-                {CATEGORY_DISPLAY_NAMES[post.category as SportCategory] ||
-                  post.category}
-              </span>
-              <h2 className="post-card-title">
-                <Link href={`/posts/${post.slug}`}>{post.title}</Link>
-              </h2>
-              <p className="post-card-date">&#128197; {post.date}</p>
-              <p className="post-card-excerpt">{post.excerpt}</p>
+              <Link href={`/posts/${post.slug}`} className="post-card-banner-link">
+                <HeroBanner category={post.category} size="compact" />
+              </Link>
+              <div className="post-card-body">
+                <span className="post-card-category">
+                  <span aria-hidden="true">{CATEGORY_ICONS[post.category as SportCategory]}</span>{' '}
+                  {CATEGORY_DISPLAY_NAMES[post.category as SportCategory] ||
+                    post.category}
+                </span>
+                <h2 className="post-card-title">
+                  <Link href={`/posts/${post.slug}`}>{post.title}</Link>
+                </h2>
+                <p className="post-card-date">{post.date}</p>
+                <p className="post-card-excerpt">{post.excerpt}</p>
+                <Link href={`/posts/${post.slug}`} className="post-card-readmore">
+                  Read Review &rarr;
+                </Link>
+              </div>
             </article>
           ))}
         </div>

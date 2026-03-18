@@ -7,6 +7,7 @@ import {
   CATEGORY_ICONS,
   type SportCategory,
 } from '@/lib/categories';
+import HeroBanner from '@/components/HeroBanner';
 
 interface Props {
   params: Promise<{ category: string }>;
@@ -38,13 +39,10 @@ export default async function CategoryPage({ params }: Props) {
 
   return (
     <>
-      <h1 className="page-title">{icon} Best {name} Equipment for Kids</h1>
-      <p className="page-subtitle">
-        &#128221; All our {name.toLowerCase()} training equipment reviews.
-      </p>
+      <HeroBanner category={category} size="full" />
 
       <div className="category-bar">
-        <Link href="/">&#127968; All</Link>
+        <Link href="/">All</Link>
         {SPORTS_CATEGORIES.map((cat) => (
           <Link
             key={cat}
@@ -64,14 +62,22 @@ export default async function CategoryPage({ params }: Props) {
         <div className="post-grid">
           {posts.map((post) => (
             <article key={post.slug} className="post-card">
-              <span className="post-card-category">
-                <span aria-hidden="true">{icon}</span> {name}
-              </span>
-              <h2 className="post-card-title">
-                <Link href={`/posts/${post.slug}`}>{post.title}</Link>
-              </h2>
-              <p className="post-card-date">&#128197; {post.date}</p>
-              <p className="post-card-excerpt">{post.excerpt}</p>
+              <Link href={`/posts/${post.slug}`} className="post-card-banner-link">
+                <HeroBanner category={post.category} size="compact" />
+              </Link>
+              <div className="post-card-body">
+                <span className="post-card-category">
+                  <span aria-hidden="true">{icon}</span> {name}
+                </span>
+                <h2 className="post-card-title">
+                  <Link href={`/posts/${post.slug}`}>{post.title}</Link>
+                </h2>
+                <p className="post-card-date">{post.date}</p>
+                <p className="post-card-excerpt">{post.excerpt}</p>
+                <Link href={`/posts/${post.slug}`} className="post-card-readmore">
+                  Read Review &rarr;
+                </Link>
+              </div>
             </article>
           ))}
         </div>

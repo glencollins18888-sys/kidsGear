@@ -36,6 +36,10 @@ body {
 .site-header {
   border-bottom: 1px solid var(--color-border);
   padding: 1rem 0;
+  background: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 .site-header .container {
@@ -85,6 +89,54 @@ main {
   min-height: 60vh;
 }
 
+/* Hero Banner */
+.hero-banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.hero-banner--compact {
+  height: 120px;
+  border-radius: 8px 8px 0 0;
+}
+
+.hero-banner--full {
+  height: 200px;
+  margin-bottom: 2rem;
+}
+
+.hero-banner__icon {
+  font-size: 3rem;
+  line-height: 1;
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
+}
+
+.hero-banner--compact .hero-banner__icon {
+  font-size: 2.5rem;
+}
+
+.hero-banner__label {
+  color: #fff;
+  font-weight: 700;
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-top: 0.5rem;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  padding: 0 1rem;
+}
+
+.hero-banner--full .hero-banner__label {
+  font-size: 1.1rem;
+  max-width: 600px;
+}
+
 /* Post grid */
 .page-title {
   font-size: 1.75rem;
@@ -128,13 +180,28 @@ main {
 
 .post-card {
   border: 1px solid var(--color-border);
-  border-radius: 8px;
-  padding: 1.25rem;
-  transition: box-shadow 0.15s;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: box-shadow 0.2s, transform 0.2s;
+  display: flex;
+  flex-direction: column;
 }
 
 .post-card:hover {
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  transform: translateY(-2px);
+}
+
+.post-card-banner-link {
+  display: block;
+  text-decoration: none;
+}
+
+.post-card-body {
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }
 
 .post-card-category {
@@ -147,8 +214,9 @@ main {
 }
 
 .post-card-title {
-  font-size: 1.15rem;
+  font-size: 1.1rem;
   margin-bottom: 0.35rem;
+  line-height: 1.3;
 }
 
 .post-card-title a {
@@ -169,6 +237,20 @@ main {
 .post-card-excerpt {
   font-size: 0.9rem;
   color: var(--color-text-light);
+  flex: 1;
+}
+
+.post-card-readmore {
+  display: inline-block;
+  margin-top: 1rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--color-primary);
+  text-decoration: none;
+}
+
+.post-card-readmore:hover {
+  text-decoration: underline;
 }
 
 /* Article page */
@@ -184,13 +266,31 @@ main {
   margin-bottom: 1rem;
 }
 
+.article-back:hover {
+  text-decoration: underline;
+}
+
+.article-meta {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 0.5rem;
+}
+
 .article-category {
   display: inline-block;
   font-size: 0.75rem;
   font-weight: 600;
   text-transform: uppercase;
   color: var(--color-accent);
-  margin-bottom: 0.5rem;
+}
+
+.article-reading-time {
+  font-size: 0.8rem;
+  color: var(--color-text-light);
+  padding: 0.15rem 0.5rem;
+  background: var(--color-bg-alt);
+  border-radius: 12px;
 }
 
 .article-title {
@@ -204,13 +304,16 @@ main {
   font-size: 0.9rem;
 }
 
+/* Article content */
 .article-content {
   max-width: 720px;
 }
 
 .article-content h2 {
   font-size: 1.5rem;
-  margin: 2rem 0 0.75rem;
+  margin: 2.5rem 0 0.75rem;
+  padding-bottom: 0.5rem;
+  border-bottom: 2px solid var(--color-border);
 }
 
 .article-content h3 {
@@ -247,21 +350,31 @@ main {
   background: #ff9900;
   color: #111;
   font-weight: 600;
-  padding: 0.6rem 1.25rem;
-  border-radius: 6px;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
   text-decoration: none;
   font-size: 0.95rem;
   transition: background 0.15s, transform 0.1s;
+  box-shadow: 0 2px 8px rgba(255, 153, 0, 0.3);
 }
 
 .article-content a[href*="amazon.com"]:hover {
   background: #e88b00;
   transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(255, 153, 0, 0.4);
 }
 
 .article-content a[href*="amazon.com"]::before {
   content: '\1F6D2';
   font-size: 1.1rem;
+}
+
+/* Product review dividers */
+.article-content hr {
+  border: none;
+  height: 1px;
+  background: var(--color-border);
+  margin: 2rem 0;
 }
 
 /* Empty state */
@@ -315,10 +428,22 @@ main {
     align-items: center;
     justify-content: space-between;
   }
+
+  .hero-banner--full {
+    height: 240px;
+  }
+
+  .hero-banner--full .hero-banner__icon {
+    font-size: 4rem;
+  }
 }
 
 @media (min-width: 1024px) {
   .post-grid {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .hero-banner--full {
+    height: 280px;
   }
 }

@@ -3,6 +3,7 @@ import { notFound } from 'next/navigation';
 import type { Metadata } from 'next';
 import { getAllPosts, getPostBySlug } from '@/lib/posts';
 import { CATEGORY_DISPLAY_NAMES, CATEGORY_ICONS, type SportCategory } from '@/lib/categories';
+import HeroBanner from '@/components/HeroBanner';
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -61,27 +62,37 @@ function ArticleJsonLd({ post }: { post: { title: string; date: string; metaDesc
   );
 }
 
+function getReadingTime(html: string): number {
+  const text = html.replace(/<[^>]*>/g, '');
+  const words = text.split(/\s+/).length;
+  return Math.max(1, Math.round(words / 200));
+}
+
 export default async function PostPage({ params }: Props) {
   const { slug } = await params;
   const post = await getPostBySlug(slug);
   if (!post) notFound();
 
+  const readingTime = getReadingTime(post.contentHtml);
+
   return (
     <article>
       <ArticleJsonLd post={post} />
+      <HeroBanner category={post.category} size="full" title={post.title} />
       <div className="article-header">
         <Link href="/" className="article-back">
-          &larr; &#127968; All Reviews
+          &larr; All Reviews
         </Link>
-        <div>
+        <div className="article-meta">
           <span className="article-category">
             <span aria-hidden="true">{CATEGORY_ICONS[post.category as SportCategory]}</span>{' '}
             {CATEGORY_DISPLAY_NAMES[post.category as SportCategory] ||
               post.category}
           </span>
+          <span className="article-reading-time">{readingTime} min read</span>
         </div>
         <h1 className="article-title">{post.title}</h1>
-        <p className="article-date">&#128197; {post.date}</p>
+        <p className="article-date">{post.date}</p>
       </div>
       <div
         className="article-content"

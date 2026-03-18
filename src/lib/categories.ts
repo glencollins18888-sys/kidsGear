@@ -39,6 +39,19 @@ export const CATEGORY_ICONS: Record<SportCategory, string> = {
   'martial-arts': '\uD83E\uDD4B',
 };
 
+export const CATEGORY_COLORS: Record<SportCategory, [string, string]> = {
+  soccer: ['#16a34a', '#059669'],
+  basketball: ['#ea580c', '#dc2626'],
+  baseball: ['#dc2626', '#991b1b'],
+  swimming: ['#0284c7', '#0369a1'],
+  gymnastics: ['#d946ef', '#a21caf'],
+  tennis: ['#65a30d', '#4d7c0f'],
+  football: ['#7c3aed', '#6d28d9'],
+  'track-and-field': ['#f59e0b', '#d97706'],
+  volleyball: ['#06b6d4', '#0891b2'],
+  'martial-arts': ['#1f2937', '#374151'],
+};
+
 export function getNextCategory(lastCategory: string | null): SportCategory {
   if (!lastCategory) return SPORTS_CATEGORIES[0];
   const index = SPORTS_CATEGORIES.indexOf(lastCategory as SportCategory);
