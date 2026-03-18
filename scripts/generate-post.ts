@@ -3,6 +3,17 @@ import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
 
+// Load .env.local so the script works standalone (outside Next.js)
+const envPath = path.join(process.cwd(), '.env.local');
+if (fs.existsSync(envPath)) {
+  for (const line of fs.readFileSync(envPath, 'utf-8').split('\n')) {
+    const match = line.match(/^([^#=]+)=(.*)$/);
+    if (match && !process.env[match[1].trim()]) {
+      process.env[match[1].trim()] = match[2].trim();
+    }
+  }
+}
+
 const SPORTS_CATEGORIES = [
   'soccer',
   'basketball',
