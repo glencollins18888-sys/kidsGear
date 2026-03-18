@@ -89,6 +89,15 @@ A properly sized basketball makes a huge difference for young players. This Spal
 
 ---
 
+## Quick Comparison
+
+| Product | Ages | Price Range | Top Pick |
+|---------|------|-------------|----------|
+| SKLZ Dribble Stick | 7-14 | $$$ | |
+| Lifetime Adjustable Youth Basketball Hoop | 5-12 | $$$ | ⭐ Best Overall |
+| SKLZ Shooting Target | 8-14 | $ | |
+| Spalding NBA Youth Basketball (Size 5) | 5-10 | $$ | |
+
 ## Buying Guide
 
 The most important factor when buying basketball equipment for kids is getting the right size. Basketballs come in three main sizes: Size 5 (27.5 inches) for ages 5-8, Size 6 (28.5 inches) for ages 9-12, and Size 7 (29.5 inches, full size) for ages 13 and up. Using a ball that's too large or heavy will develop bad habits.

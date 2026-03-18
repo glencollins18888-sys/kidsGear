@@ -89,6 +89,15 @@ The Tourna Fill-n-Drill is another excellent solo training option with a unique 
 
 ---
 
+## Quick Comparison
+
+| Product | Ages | Price Range | Top Pick |
+|---------|------|-------------|----------|
+| HEAD Speed Junior Tennis Racket | 6-10 | $$ | ⭐ Best Overall |
+| WILSON US Open Starter Tennis Balls (36pk) | 4-10 | $ | |
+| SKLZ PowerBase Tennis Trainer | 7-14 | $$ | |
+| Tourna Fill-n-Drill Tennis Trainer | 5-12 | $$ | |
+
 ## Buying Guide
 
 When shopping for junior tennis equipment, racket size is the most important factor. A general rule is to have your child hold the racket at their side — if the bottom of the frame touches the ground, it's too long. Most kids ages 4-6 need a 19-21 inch racket, ages 6-8 need 23 inches, and ages 9-12 need 25-26 inches.

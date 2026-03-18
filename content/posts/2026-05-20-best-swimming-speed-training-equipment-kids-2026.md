@@ -89,6 +89,15 @@ A pull buoy placed between the legs immobilizes the kick, forcing the upper body
 
 ---
 
+## Quick Comparison
+
+| Product | Ages | Price Range | Top Pick |
+|---------|------|-------------|----------|
+| Finis Swimmer's Snorkel | 8-14 | $$ | ⭐ Best Overall |
+| FINIS Agility Paddles | 9-14 | $$ | |
+| Finis Tempo Trainer Pro | 10-14 | $$ | |
+| TYR Junior Pull Float | 7-12 | $ | |
+
 ## Buying Guide
 
 Training tools should supplement technique coaching, not replace it. The best approach is to introduce one new tool at a time, use it for a specific training purpose, and have the swimmer alternate between aided and unaided swimming to transfer improvements.

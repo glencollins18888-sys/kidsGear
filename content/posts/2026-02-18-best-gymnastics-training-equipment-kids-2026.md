@@ -89,6 +89,15 @@ Wedge mats (also called cheese mats or incline mats) are incredibly versatile tr
 
 ---
 
+## Quick Comparison
+
+| Product | Ages | Price Range | Top Pick |
+|---------|------|-------------|----------|
+| Tumbl Trak Sectional Floor Balance Beam | 4-12 | $$$ | |
+| Tumbling Mat by We Sell Mats (4x8) | 3-14 | $$ | ⭐ Best Overall |
+| Shiwei Adjustable Junior Training Bar | 3-10 | $$ | |
+| Milliard Gymnastics Wedge Mat | 3-10 | $$ | |
+
 ## Buying Guide
 
 Safety must be the top consideration for home gymnastics equipment. Always place mats under and around any elevated equipment like bars and beams. Never let children attempt skills at home that they haven't first learned with a coach. Establish clear rules about what skills are appropriate for home practice.

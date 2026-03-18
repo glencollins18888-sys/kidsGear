@@ -89,6 +89,15 @@ A batting tee remains the single most important piece of hitting equipment at an
 
 ---
 
+## Quick Comparison
+
+| Product | Ages | Price Range | Top Pick |
+|---------|------|-------------|----------|
+| Jugs Lite-Flite Machine | 7-14 | $$$$ | |
+| SKLZ Hit-A-Way Portable Batting Trainer | 8-14 | $$ | |
+| Rukket Pop-Up Batting Practice Net (7x7) | 6-14 | $$ | |
+| Easton Deluxe Batting Tee | 4-12 | $ | ⭐ Best Overall |
+
 ## Buying Guide
 
 Every home batting practice setup should start with a quality tee and net. Even professional hitters take hundreds of tee swings daily. A good tee forces hitters to focus on mechanics without the variable of pitch timing, while a net provides a safe backstop.

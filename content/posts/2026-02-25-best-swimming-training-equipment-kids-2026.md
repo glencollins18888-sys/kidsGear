@@ -89,6 +89,15 @@ For beginners still building water confidence, a quality swim vest provides the 
 
 ---
 
+## Quick Comparison
+
+| Product | Ages | Price Range | Top Pick |
+|---------|------|-------------|----------|
+| Speedo Junior Hydrospex Swim Goggles | 3-10 | $ | ⭐ Best Overall |
+| Finis Floating Kickboard | 5-12 | $ | |
+| Finis Long Floating Fins (Youth) | 7-14 | $$ | |
+| Speedo Kids Swim Vest | 2-6 | $$ | |
+
 ## Buying Guide
 
 Fit is everything in swim equipment. Goggles that leak distract kids and make them not want to swim. Fins that are too big cause blisters and cramps. Always refer to manufacturer size charts and when in doubt, try equipment on before committing to heavy training.

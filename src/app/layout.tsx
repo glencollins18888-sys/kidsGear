@@ -2,6 +2,9 @@ import type { Metadata } from 'next';
 import Link from 'next/link';
 import { Analytics } from '@vercel/analytics/next';
 import { SPORTS_CATEGORIES, CATEGORY_DISPLAY_NAMES, CATEGORY_ICONS } from '@/lib/categories';
+import SearchBar from '@/components/SearchBar';
+import DarkModeToggle from '@/components/DarkModeToggle';
+import NewsletterSignup from '@/components/NewsletterSignup';
 import './globals.css';
 
 const SITE_URL = process.env.SITE_URL || 'https://kids-gear.vercel.app';
@@ -39,13 +42,26 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
+      <head>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(){try{var t=localStorage.getItem('theme');var d=t==='dark'||((!t)&&window.matchMedia('(prefers-color-scheme:dark)').matches);document.documentElement.setAttribute('data-theme',d?'dark':'light')}catch(e){}})()`,
+          }}
+        />
+      </head>
       <body>
         <header className="site-header">
           <div className="container">
-            <Link href="/" className="site-logo">
-              <span className="logo-icon" aria-hidden="true">&#127941;</span> KidGear Reviews
-            </Link>
+            <div className="header-top">
+              <Link href="/" className="site-logo">
+                <span className="logo-icon" aria-hidden="true">&#127941;</span> KidGear Reviews
+              </Link>
+              <div className="header-actions">
+                <SearchBar />
+                <DarkModeToggle />
+              </div>
+            </div>
             <nav className="site-nav">
               {SPORTS_CATEGORIES.map((cat) => (
                 <Link key={cat} href={`/category/${cat}`}>
@@ -56,13 +72,16 @@ export default function RootLayout({
           </div>
         </header>
         <main className="container">{children}</main>
+        <div className="container">
+          <NewsletterSignup />
+        </div>
         <footer className="site-footer">
           <div className="container">
             <nav className="footer-nav">
-              <Link href="/about">&#9881;&#65039; About</Link>
-              <Link href="/contact">&#9993;&#65039; Contact</Link>
-              <Link href="/privacy-policy">&#128274; Privacy Policy</Link>
-              <Link href="/disclaimer">&#9888;&#65039; Disclaimer</Link>
+              <Link href="/about">About</Link>
+              <Link href="/contact">Contact</Link>
+              <Link href="/privacy-policy">Privacy Policy</Link>
+              <Link href="/disclaimer">Disclaimer</Link>
             </nav>
             <p className="affiliate-disclosure">
               <strong>Affiliate Disclosure:</strong> As an Amazon Associate, I
@@ -71,7 +90,7 @@ export default function RootLayout({
               change. Any price and availability information displayed on
               Amazon at the time of purchase will apply.
             </p>
-            <p>&copy; {new Date().getFullYear()} &#127941; KidGear Reviews</p>
+            <p>&copy; {new Date().getFullYear()} KidGear Reviews</p>
           </div>
         </footer>
         <Analytics />

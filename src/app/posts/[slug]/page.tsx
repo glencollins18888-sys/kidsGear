@@ -4,6 +4,8 @@ import type { Metadata } from 'next';
 import { getAllPosts, getPostBySlug } from '@/lib/posts';
 import { CATEGORY_DISPLAY_NAMES, CATEGORY_ICONS, type SportCategory } from '@/lib/categories';
 import HeroBanner from '@/components/HeroBanner';
+import RelatedPosts from '@/components/RelatedPosts';
+import ShareButtons from '@/components/ShareButtons';
 
 interface Props {
   params: Promise<{ slug: string }>;
@@ -93,11 +95,14 @@ export default async function PostPage({ params }: Props) {
         </div>
         <h1 className="article-title">{post.title}</h1>
         <p className="article-date">{post.date}</p>
+        <ShareButtons title={post.title} slug={post.slug} />
       </div>
       <div
         className="article-content"
         dangerouslySetInnerHTML={{ __html: post.contentHtml }}
       />
+      <ShareButtons title={post.title} slug={post.slug} />
+      <RelatedPosts currentSlug={post.slug} category={post.category} />
     </article>
   );
 }
