@@ -1,11 +1,10 @@
 import Link from 'next/link';
-import { getAllPosts, getAllCategories } from '@/lib/posts';
+import { getAllPosts } from '@/lib/posts';
 import { CATEGORY_DISPLAY_NAMES, CATEGORY_ICONS, type SportCategory } from '@/lib/categories';
 import HeroBanner from '@/components/HeroBanner';
 
 export default function HomePage() {
   const posts = getAllPosts();
-  const categories = getAllCategories();
 
   return (
     <>
@@ -14,16 +13,6 @@ export default function HomePage() {
         Weekly expert reviews to help your young athlete find the best training
         gear.
       </p>
-
-      {categories.length > 0 && (
-        <div className="category-bar">
-          {categories.map((cat) => (
-            <Link key={cat} href={`/category/${cat}`}>
-              <span aria-hidden="true">{CATEGORY_ICONS[cat as SportCategory]}</span> {CATEGORY_DISPLAY_NAMES[cat as SportCategory] || cat}
-            </Link>
-          ))}
-        </div>
-      )}
 
       {posts.length === 0 ? (
         <div className="empty-state">

@@ -343,7 +343,20 @@ Then review 4 products. For each product use this format:
 
 ---
 
-After all products, add:
+After all 4 products, add a Quick Comparison table:
+
+## Quick Comparison
+
+| Product | Ages | Price Range | Top Pick |
+|---------|------|-------------|----------|
+| [Product 1 Name] | [age range] | [$ or $$ or $$$] | ⭐ Best Overall |
+| [Product 2 Name] | [age range] | [$ or $$ or $$$] | |
+| [Product 3 Name] | [age range] | [$ or $$ or $$$] | |
+| [Product 4 Name] | [age range] | [$ or $$ or $$$] | |
+
+Pick the best value product as the Top Pick. Use $ for under $20, $$ for $20-50, $$$ for $50+.
+
+Then add:
 
 ## Buying Guide
 
